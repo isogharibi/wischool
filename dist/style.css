@@ -904,6 +904,16 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1356,6 +1366,10 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.delay-75 {
+  transition-delay: 75ms;
+}
+
 @media (min-width: 1024px) {
   .lg\:container {
     width: 100%;
@@ -1686,6 +1700,34 @@ video {
 
   .lg\:text-\[70px\] {
     font-size: 70px;
+  }
+
+  .lg\:leading-3 {
+    line-height: .75rem;
+  }
+
+  .lg\:leading-\[20px\] {
+    line-height: 20px;
+  }
+
+  .lg\:leading-\[60px\] {
+    line-height: 60px;
+  }
+
+  .lg\:leading-\[120px\] {
+    line-height: 120px;
+  }
+
+  .lg\:leading-\[90px\] {
+    line-height: 90px;
+  }
+
+  .lg\:leading-\[80px\] {
+    line-height: 80px;
+  }
+
+  .lg\:leading-\[85px\] {
+    line-height: 85px;
   }
 
   .lg\:shadow {

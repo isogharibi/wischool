@@ -7,21 +7,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="../dist/style.css">
     <link rel="stylesheet" href="../dist/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Document</title>
 </head>
 
 <body>
     <main style="overflow-x: hidden;">
         <header class="shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)] pb-2">
-            <div class="flex items-center justify-between pt-2 container lg:hidden">
-                <img src="../assets/logo.svg" alt="">
+            <div data-aos="fade-down" class="flex items-center justify-between pt-2 container lg:hidden">
+                <img class="animate__animated animate__bounce animate__delay-1s" src="../assets/logo.svg" alt="">
                 <img src="../assets/humber-menu.svg" alt="">
             </div>
-            <div class="lg:flex lg:justify-between lg:py-3 hidden container lg:items-center">
+            <div data-aos="fade-right" class="lg:flex lg:justify-between lg:py-3 hidden container lg:items-center">
                 <h1 style="
                 font-size: 32px; font-style: normal; font-weight: 600; line-height: normal;">WiSchool</h1>
                 </svg>
-                <ul class="hidden lg:flex lg:gap-x-5 lg:items-center">
+                <ul class="hidden lg:flex lg:gap-x-5 lg:items-center animate__animated animate__shakeY">
                     <li>Home</li>
                     <li>Courses</li>
                     <li>Instuctors</li>
@@ -42,12 +43,13 @@
         <section class="container mt-8 flex flex-col gap-y-16 pb-5">
             <div class="lg:flex lg:items-center gap-x-52 lg:justify-between">
                 <div class="flex flex-col gap-y-16">
-                    <h1 class="font-bold text-4xl pt-7 lg:text-[70px]" style="line-height: 80px;">Quality <span
+                    <h1 data-aos="fade-up" class="font-bold text-4xl pt-7 lg:text-[70px] lg:leading-[85px]">Quality <span
                             class="text-[#09B451]">Education</span> <br> By Any Means <br>
                         Necessary.</h1>
-                    <button class="bg-[#09B451] rounded-lg p-4 text-white w-44">Get Started</button>
+                    <button data-aos="fade-right" class="bg-[#09B451] rounded-lg p-4 text-white w-44">Get
+                        Started</button>
                 </div>
-                <div class="relative py-10">
+                <div data-aos="zoom-in" class="relative py-10 animate__animated animate__flash animate__delay-1s">
                     <div class="flex justify-end">
                         <img class="w-[260px] lg:w-[400px]" src="../assets/person-img.png" alt="">
                     </div>
@@ -66,7 +68,8 @@
                                 d="M8.42543 2.79224C7.23877 2.79224 6.10071 3.26364 5.26161 4.10274C4.42251 4.94184 3.95111 6.0799 3.95111 7.26656C3.95111 8.45323 4.42251 9.59129 5.26161 10.4304C6.10071 11.2695 7.23877 11.7409 8.42543 11.7409C9.6121 11.7409 10.7502 11.2695 11.5893 10.4304C12.4284 9.59129 12.8998 8.45323 12.8998 7.26656C12.8998 6.0799 12.4284 4.94184 11.5893 4.10274C10.7502 3.26364 9.6121 2.79224 8.42543 2.79224ZM5.74084 7.26656C5.74084 6.55456 6.02368 5.87173 6.52714 5.36827C7.0306 4.86481 7.71344 4.58197 8.42543 4.58197C9.13743 4.58197 9.82027 4.86481 10.3237 5.36827C10.8272 5.87173 11.11 6.55456 11.11 7.26656C11.11 7.97856 10.8272 8.6614 10.3237 9.16486C9.82027 9.66832 9.13743 9.95116 8.42543 9.95116C7.71344 9.95116 7.0306 9.66832 6.52714 9.16486C6.02368 8.6614 5.74084 7.97856 5.74084 7.26656ZM15.502 7.46165C15.2504 7.33341 14.9719 7.26657 14.6895 7.26656V5.47683C15.2546 5.47687 15.8117 5.61072 16.3152 5.86742C16.8186 6.12412 17.2542 6.49638 17.5861 6.95374C17.9181 7.4111 18.137 7.94055 18.225 8.49878C18.3131 9.05702 18.2676 9.62815 18.0925 10.1655C17.9174 10.7028 17.6176 11.191 17.2175 11.5902C16.8175 11.9893 16.3286 12.2881 15.7909 12.462C15.2532 12.6359 14.682 12.6801 14.1239 12.5908C13.5659 12.5016 13.0369 12.2815 12.5803 11.9485L13.6344 10.5024C13.834 10.6476 14.0615 10.75 14.3025 10.8032C14.5436 10.8563 14.793 10.8589 15.0352 10.811C15.2773 10.7631 15.5069 10.6656 15.7095 10.5246C15.9122 10.3837 16.0835 10.2023 16.2127 9.992C16.3418 9.78167 16.4261 9.54689 16.4602 9.30242C16.4943 9.05795 16.4774 8.80907 16.4107 8.57142C16.3439 8.33378 16.2288 8.11252 16.0724 7.92153C15.916 7.73054 15.7218 7.57397 15.502 7.46165ZM18.2672 18.8998C18.2669 17.951 17.8899 17.0412 17.219 16.3703C16.5481 15.6994 15.6383 15.3224 14.6895 15.3221V13.5306C16.1134 13.5309 17.479 14.0966 18.4858 15.1035C19.4927 16.1104 20.0584 17.4759 20.0587 18.8998H18.2672ZM14.6895 18.8998H12.8998C12.8998 17.7132 12.4284 16.5751 11.5893 15.736C10.7502 14.8969 9.6121 14.4255 8.42543 14.4255C7.23877 14.4255 6.10071 14.8969 5.26161 15.736C4.42251 16.5751 3.95111 17.7132 3.95111 18.8998H2.16138C2.16138 17.2385 2.82134 15.6452 3.99608 14.4705C5.17081 13.2957 6.7641 12.6358 8.42543 12.6358C10.0868 12.6358 11.6801 13.2957 12.8548 14.4705C14.0295 15.6452 14.6895 17.2385 14.6895 18.8998Z"
                                 fill="white" />
                         </svg>
-                        <h1 class="text-sm font-medium">Group Reading</h1>
+                        <h1 class="animate__animated animate__bounce animate__delay-1s" class="text-sm font-medium">
+                            Group Reading</h1>
                     </div>
                     <div class="flex items-center gap-x-3 bg-[#DDFFFF] p-2 w-full lg:w-56 justify-center">
                         <svg class="bg-[#09B451] pl-1 pr-1 rounded-full" width="32" height="32" viewBox="0 0 23 22"
@@ -83,7 +86,8 @@
                                 </clipPath>
                             </defs>
                         </svg>
-                        <h1 class="text-sm font-medium">10k Courses</h1>
+                        <h1 class="animate__animated animate__bounce animate__delay-2s" class="text-sm font-medium">10k
+                            Courses</h1>
                     </div>
                 </div>
                 <div class="flex items-center gap-x-9">
@@ -100,7 +104,8 @@
                                 d="M13.8528 9.93776L11.6425 12.8684M13.8528 12.8684L11.6425 9.93776M14.4434 8.60889H10.8147L9.0787 13.0832L7.77667 9.93776"
                                 stroke="white" stroke-width="0.894866" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
-                        <h1 class="text-sm font-medium">Problem Solving</h1>
+                        <h1 class="animate__animated animate__bounce animate__delay-1s" class="text-sm font-medium">
+                            Problem Solving</h1>
                     </div>
                     <div class="flex items-center gap-x-6 bg-[#DDFFFF] p-2 w-full lg:w-56 justify-center">
                         <svg class="bg-[#09B451] pl-1 pr-1 rounded-full" width="32" height="32" viewBox="0 0 22 22"
@@ -113,7 +118,7 @@
                                 d="M10.9804 9.95117V9.96012M7.40098 9.95117V9.96012M14.5599 9.95117V9.96012M12.7702 17.1101C11.6641 17.1101 10.4453 17.5575 9.33299 18.1347C7.54505 19.0627 6.65108 19.5271 6.21081 19.2309C5.77053 18.9356 5.85375 18.0184 6.02109 16.1848L6.05868 15.7678"
                                 stroke="#F5F5F5" stroke-width="1.78973" stroke-linecap="round" />
                         </svg>
-                        <h1 class="text-sm font-medium">Live chat</h1>
+                        <h1  class="animate__animated animate__bounce animate__delay-2s" class="text-sm font-medium">Live chat</h1>
                     </div>
                 </div>
                 <div class="flex items-center gap-x-6 justify-center">
@@ -132,7 +137,8 @@
                                 </clipPath>
                             </defs>
                         </svg>
-                        <h1 class="text-sm font-medium">Hand-on activities</h1>
+                        <h1 class="animate__animated animate__bounce animate__delay-3s" class="text-sm font-medium">
+                            Hand-on activities</h1>
                     </div>
                 </div>
             </div>
@@ -140,5 +146,10 @@
     </main>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1200,
+    })
+</script>
 
 </html>
